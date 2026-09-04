@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bkhdfmlpfoyw2"]
+
+[ext_resource type="PackedScene" uid="uid://bm7ubjpt0cmp3" path="res://boss_chad.tscn" id="1_d5t1o"]
+[ext_resource type="PackedScene" uid="uid://dn5q34u8okp1a" path="res://player.tscn" id="2_b57r8"]
+
+[node name="BossTestArena" type="Node2D" unique_id=2094291211]
+
+[node name="BossChad" parent="." unique_id=235944232 instance=ExtResource("1_d5t1o")]
+
+[node name="player" parent="." unique_id=662627393 instance=ExtResource("2_b57r8")]
+position = Vector2(403, 277)

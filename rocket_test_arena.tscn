@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://2mrt45s0kp0"]
+
+[ext_resource type="PackedScene" uid="uid://dh20bi3u8rdxm" path="res://rocket.tscn" id="1_31oob"]
+[ext_resource type="PackedScene" uid="uid://dn5q34u8okp1a" path="res://player.tscn" id="2_ub47e"]
+[ext_resource type="PackedScene" uid="uid://dbwu655iucm2o" path="res://enemy.tscn" id="3_ub47e"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ub47e"]
+vertices = PackedVector2Array(199.60938, 93.61719, -112.796875, 82.359375, -109.1875, -97.203125, 192.36719, -103.78125)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-119, -107, 202, -114, 210, 104, -123, 92)])
+
+[node name="RocketTestArena" type="Node2D" unique_id=598949069]
+
+[node name="Rocket" parent="." unique_id=922398583 instance=ExtResource("1_31oob")]
+position = Vector2(5.1848297, -38.633286)
+
+[node name="player" parent="." unique_id=662627393 instance=ExtResource("2_ub47e")]
+position = Vector2(-83.32471, -8.638512)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1103842977]
+navigation_polygon = SubResource("NavigationPolygon_ub47e")
+
+[node name="Enemy" parent="." unique_id=355083620 instance=ExtResource("3_ub47e")]

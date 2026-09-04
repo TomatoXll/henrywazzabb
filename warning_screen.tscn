@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://ceda7llbglne8"]
+
+[ext_resource type="Script" uid="uid://0e7msraabhn4" path="res://warning_screen.gd" id="1_e7iew"]
+[ext_resource type="Texture2D" uid="uid://dj67fd5il4bey" path="res://assets/warning.png" id="2_2ss33"]
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="3_j7u3t"]
+[ext_resource type="Texture2D" uid="uid://dlkmkjq78omm0" path="res://assets/ok button1.png" id="4_72c7h"]
+[ext_resource type="Texture2D" uid="uid://dlcbmhseokm6s" path="res://assets/ok button2.png" id="5_8o4yw"]
+[ext_resource type="Texture2D" uid="uid://ttgjsixo3qdl" path="res://assets/view button1.png" id="6_hk86e"]
+[ext_resource type="Texture2D" uid="uid://88lxd1kusbi4" path="res://assets/view button2.png" id="7_u4mfl"]
+[ext_resource type="Texture2D" uid="uid://btui22uagsg4j" path="res://assets/fix button1.png" id="8_isxii"]
+[ext_resource type="Texture2D" uid="uid://degiql2m0rm7b" path="res://assets/fix button2.png" id="9_2huvd"]
+[ext_resource type="Texture2D" uid="uid://b3ddj4e38iwog" path="res://assets/X somthing jigerbell1.png" id="10_j7u3t"]
+[ext_resource type="Texture2D" uid="uid://b3wedn4y4vqqf" path="res://assets/X somthing jigerbell2.png" id="11_72c7h"]
+[ext_resource type="AudioStream" uid="uid://b21bwr8pu2fcw" path="res://assets/eritnhut1992-buzzer-or-wrong-answer-20582.wav" id="12_72c7h"]
+
+[node name="WarningScreen" type="CanvasLayer" unique_id=1866497480 node_paths=PackedStringArray("message_label", "ok_button", "view_button", "fix_button", "close_button", "title_bar", "beep_player", "window")]
+process_mode = 3
+script = ExtResource("1_e7iew")
+message_label = NodePath("Window/MessageLabel")
+ok_button = NodePath("Window/OKButton")
+view_button = NodePath("Window/ViewButton")
+fix_button = NodePath("Window/FixButton")
+close_button = NodePath("Window/CloseButton")
+title_bar = NodePath("Window/TitleBarDragArea")
+beep_player = NodePath("Window/AudioStreamPlayer2D")
+window = NodePath("Window")
+
+[node name="Window" type="TextureRect" parent="." unique_id=1641198862]
+offset_left = 702.0
+offset_top = 373.0
+offset_right = 1202.0
+offset_bottom = 573.0
+texture = ExtResource("2_2ss33")
+
+[node name="TitleBarDragArea" type="Control" parent="Window" unique_id=472559185]
+anchors_preset = 0
+offset_right = 499.0
+offset_bottom = 27.0
+
+[node name="MessageLabel" type="Label" parent="Window" unique_id=1544108778]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 41.0
+offset_right = 486.0
+offset_bottom = 147.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_j7u3t")
+
+[node name="OKButton" type="TextureButton" parent="Window" unique_id=718733103]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 162.0
+offset_right = 481.0
+offset_bottom = 202.0
+texture_normal = ExtResource("4_72c7h")
+texture_pressed = ExtResource("5_8o4yw")
+
+[node name="ViewButton" type="TextureButton" parent="Window" unique_id=1664527072]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 162.0
+offset_right = 309.0
+offset_bottom = 202.0
+texture_normal = ExtResource("6_hk86e")
+texture_pressed = ExtResource("7_u4mfl")
+
+[node name="FixButton" type="TextureButton" parent="Window" unique_id=1283525332]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 161.0
+offset_right = 137.0
+offset_bottom = 201.0
+texture_normal = ExtResource("8_isxii")
+texture_pressed = ExtResource("9_2huvd")
+
+[node name="CloseButton" type="TextureButton" parent="Window" unique_id=994910470]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 6.0
+offset_right = 492.0
+offset_bottom = 26.0
+texture_normal = ExtResource("10_j7u3t")
+texture_pressed = ExtResource("11_72c7h")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Window" unique_id=1626203289]
+stream = ExtResource("12_72c7h")

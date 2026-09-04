@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bm7ubjpt0cmp3"]
+
+[ext_resource type="Script" uid="uid://2d7whallyu1w" path="res://boss_chad.gd" id="1_j7ai2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiud7"]
+size = Vector2(78, 80)
+
+[node name="BossChad" type="CharacterBody2D" unique_id=235944232]
+collision_layer = 4
+script = ExtResource("1_j7ai2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1864934594]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1125986728]
+shape = SubResource("RectangleShape2D_jiud7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=948039312]
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cmaxcm3norj2h"]
+
+[ext_resource type="Script" uid="uid://byxbrwmm511il" path="res://respawn_screen.gd" id="1_l7xen"]
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="2_ack7s"]
+[ext_resource type="Texture2D" uid="uid://d3b87qek6oox4" path="res://assets/folder.png" id="3_owvpr"]
+[ext_resource type="Texture2D" uid="uid://b7eevqip0plke" path="res://assets/folder press.png" id="4_6g304"]
+[ext_resource type="Texture2D" uid="uid://b5jqgw843j1n2" path="res://assets/folder hover.png" id="5_1dvyf"]
+
+[node name="RespawnScreen" type="CanvasLayer" unique_id=1150112761]
+process_mode = 3
+script = ExtResource("1_l7xen")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1821553957]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=640397128]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -149.0
+offset_right = 304.0
+offset_bottom = 169.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ack7s")
+theme_override_font_sizes/font_size = 100
+text = "YOU DIED"
+
+[node name="BackToMenu" type="Button" parent="." unique_id=1357321018]
+offset_left = 621.0
+offset_top = 663.0
+offset_right = 1300.0
+offset_bottom = 740.0
+theme_override_font_sizes/font_size = 50
+text = "BACK TO MENU"
+
+[node name="Respawn" type="Button" parent="." unique_id=2047785292]
+offset_left = 619.0
+offset_top = 560.0
+offset_right = 1304.0
+offset_bottom = 637.0
+theme_override_font_sizes/font_size = 50
+text = "Respawn
+"
+
+[node name="EditButton" type="Button" parent="." unique_id=2133167848]
+offset_left = 39.0
+offset_top = 941.0
+offset_right = 205.0
+offset_bottom = 1018.0
+theme_override_font_sizes/font_size = 50
+text = "EDIT"
+
+[node name="CodeFolderButton" type="TextureButton" parent="." unique_id=1326359082]
+offset_left = 68.0
+offset_top = 803.0
+offset_right = 168.0
+offset_bottom = 903.0
+texture_normal = ExtResource("3_owvpr")
+texture_pressed = ExtResource("4_6g304")
+texture_hover = ExtResource("5_1dvyf")
+
+[node name="CurrencyLabel" type="Label" parent="." unique_id=2029142854]
+offset_left = 773.0
+offset_top = 905.0
+offset_right = 1075.0
+offset_bottom = 976.0
+theme_override_fonts/font = ExtResource("2_ack7s")
+theme_override_font_sizes/font_size = 70

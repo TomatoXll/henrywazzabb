@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://piedcag3mgon"]
+
+[ext_resource type="Script" uid="uid://c0qd5io70k2q0" path="res://book_icon.gd" id="1_aqrib"]
+[ext_resource type="Texture2D" uid="uid://6clxy4e0kfee" path="res://assets/Guid book [close].png" id="2_aqrib"]
+
+[node name="BookIcon" type="Control" unique_id=1828536573]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 450.0
+offset_bottom = 600.0
+script = ExtResource("1_aqrib")
+
+[node name="icon" type="TextureRect" parent="." unique_id=253240878]
+layout_mode = 0
+offset_left = 1465.0
+offset_top = 112.0
+offset_right = 1915.0
+offset_bottom = 712.0
+texture = ExtResource("2_aqrib")

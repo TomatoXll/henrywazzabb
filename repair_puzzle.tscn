@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://tj8d708jouw5"]
+
+[ext_resource type="Script" uid="uid://l0m8ixodsopu" path="res://repair_puzzle.gd" id="1_4omus"]
+
+[node name="RepairPuzzle" type="Control" unique_id=248042656 node_paths=PackedStringArray("target_label", "input_field")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4omus")
+target_label = NodePath("TargetLabel")
+input_field = NodePath("InputField")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1733483573]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 380.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.19793725, 0.19793722, 0.19793722, 1)
+
+[node name="TargetLabel" type="RichTextLabel" parent="." unique_id=860292287]
+layout_mode = 0
+offset_right = 360.0
+offset_bottom = 30.0
+
+[node name="InputField" type="LineEdit" parent="." unique_id=1354067217]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 20.0
+offset_right = 340.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://o6wc8u3uyblw"]
+
+[ext_resource type="Script" uid="uid://jm1rv5mapfoq" path="res://sfx_manager.gd" id="1_gn8m1"]
+[ext_resource type="AudioStream" uid="uid://d1m2pldnwgrvw" path="res://sound/เสียงคลิ้ก1.wav" id="2_csc1w"]
+
+[node name="SfxManager" type="Node" unique_id=2121205789]
+script = ExtResource("1_gn8m1")
+
+[node name="ClickPlayer" type="AudioStreamPlayer" parent="." unique_id=289332018]
+stream = ExtResource("2_csc1w")

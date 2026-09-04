@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://devx1rpdafyua"]
+
+[ext_resource type="Script" uid="uid://c1ssntkom7t15" path="res://rocket_hud.gd" id="1_6h1og"]
+
+[node name="RocketHud" type="CanvasLayer" unique_id=364051527 node_paths=PackedStringArray("height_label", "rocket_status_texture")]
+script = ExtResource("1_6h1og")
+height_label = NodePath("HeightLabel")
+rocket_status_texture = NodePath("RocketStatusTexture")
+
+[node name="HeightLabel" type="Label" parent="." unique_id=1585575958]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RocketStatusTexture" type="TextureRect" parent="." unique_id=661631723]
+offset_right = 40.0
+offset_bottom = 40.0

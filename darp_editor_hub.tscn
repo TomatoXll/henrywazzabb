@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cbh2c15k7rrae"]
+
+[ext_resource type="Script" uid="uid://dw8xuwqg4op4u" path="res://darp_editor_hub.gd" id="1_mf33l"]
+
+[node name="DarpEditorHub" type="CanvasLayer" unique_id=642100994]
+process_mode = 3
+script = ExtResource("1_mf33l")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=191235128]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07444572, 0.07444573, 0.07444573, 1)
+
+[node name="Label" type="Label" parent="." unique_id=2144330603]
+offset_left = 26.0
+offset_top = 24.0
+offset_right = 274.0
+offset_bottom = 165.0
+theme_override_font_sizes/font_size = 70
+text = "Edit - darp
+choose Animation"
+
+[node name="AttackButton" type="Button" parent="." unique_id=16216048]
+offset_left = 18.0
+offset_top = 280.0
+offset_right = 1910.0
+offset_bottom = 357.0
+theme_override_font_sizes/font_size = 50
+text = "Attack animation"
+
+[node name="SlashEffectButton" type="Button" parent="." unique_id=1830758653]
+offset_left = 18.0
+offset_top = 374.0
+offset_right = 1908.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 50
+text = "Slash Effect"
+
+[node name="BackButton" type="Button" parent="." unique_id=204332143]
+offset_left = 1717.0
+offset_top = 860.0
+offset_right = 1840.0
+offset_bottom = 937.0
+theme_override_font_sizes/font_size = 50
+text = "Back"

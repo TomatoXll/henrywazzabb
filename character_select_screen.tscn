@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://opkrwuym755g"]
+
+[ext_resource type="Script" uid="uid://c5e5igfjk1gdb" path="res://character_select_screen.gd" id="1_foq8a"]
+
+[node name="CharacterSelectScreen" type="CanvasLayer" unique_id=1519434004]
+process_mode = 3
+script = ExtResource("1_foq8a")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1377682196]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=73638522]
+offset_left = 40.0
+offset_top = 75.0
+offset_right = 542.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 50
+text = "What you want to EDIT BY YOURSELF ?"
+
+[node name="HenryButton" type="Button" parent="." unique_id=1519872457]
+offset_left = 49.0
+offset_top = 247.0
+offset_right = 1893.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 50
+text = "HENRY"
+
+[node name="DarpButton" type="Button" parent="." unique_id=1504336530]
+offset_left = 43.0
+offset_top = 354.0
+offset_right = 1891.0
+offset_bottom = 431.0
+theme_override_font_sizes/font_size = 50
+text = "DARP"
+
+[node name="BackButton" type="Button" parent="." unique_id=13066151]
+offset_left = 1726.0
+offset_top = 931.0
+offset_right = 1864.0
+offset_bottom = 1008.0
+theme_override_font_sizes/font_size = 50
+text = "BACK"

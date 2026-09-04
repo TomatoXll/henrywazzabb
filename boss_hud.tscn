@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cscqscldtuoqe"]
+
+[ext_resource type="Script" uid="uid://dg4keuohky0tl" path="res://boss_hud.gd" id="1_ssqqs"]
+
+[node name="BossHud" type="CanvasLayer" unique_id=1286351884]
+script = ExtResource("1_ssqqs")
+
+[node name="Container" type="Control" parent="." unique_id=701916663]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="ProgressBar" parent="Container" unique_id=357990671]
+layout_mode = 1
+offset_left = 7.0
+offset_top = 25.0
+offset_right = 424.0
+offset_bottom = 57.0
+
+[node name="NameLabel" type="Label" parent="Container" unique_id=746976407]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 2.0
+offset_right = 72.0
+offset_bottom = 25.0

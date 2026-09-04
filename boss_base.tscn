@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://tviybjhtuogu"]
+
+[ext_resource type="Script" uid="uid://b0ygqxak23slj" path="res://boss_base.gd" id="1_0swwp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiud7"]
+size = Vector2(24, 24)
+
+[node name="Bossbase" type="CharacterBody2D" unique_id=235944232 groups=["enemy"]]
+script = ExtResource("1_0swwp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1864934594]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1125986728]
+shape = SubResource("RectangleShape2D_jiud7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=948039312]
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cbds7n8412750"]
+
+[ext_resource type="Script" uid="uid://cgg01vtoi00dm" path="res://poison_pool.gd" id="1_y7fdm"]
+
+[node name="PoisonPool" type="Node2D" unique_id=1360814917]
+script = ExtResource("1_y7fdm")
+
+[node name="Visual" type="ColorRect" parent="." unique_id=2118582338]
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bvsl0hwoax8vk"]
+
+[ext_resource type="Script" uid="uid://dt47bqe5yrhq8" path="res://boss_hydra.gd" id="1_c0un6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiud7"]
+size = Vector2(80, 80)
+
+[node name="BossHydra" type="CharacterBody2D" unique_id=235944232 groups=["enemy"]]
+collision_layer = 4
+script = ExtResource("1_c0un6")
+head2_range = 600.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1864934594]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1125986728]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_jiud7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=948039312]
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FireBreathVisual" type="ColorRect" parent="." unique_id=1501191792]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CircularBeamVisual" type="ColorRect" parent="." unique_id=2039361532]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LockedBeamVisual" type="ColorRect" parent="." unique_id=516022991]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MeteorVisual" type="ColorRect" parent="." unique_id=1500258241]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="MeteorWarningVisual" type="ColorRect" parent="." unique_id=1153804106]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.4696201, 9.565987e-07, 2.6471912e-07, 0.79607844)
+
+[node name="TailVisual" type="ColorRect" parent="." unique_id=949838107]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.10886293, 0.5048471, 0.29914132, 1)

@@ -1,0 +1,523 @@
+[gd_scene format=3 uid="uid://dpcfwvmux3t4s"]
+
+[ext_resource type="Script" uid="uid://d1wu47yitpv5b" path="res://guide_book.gd" id="1_kljp7"]
+[ext_resource type="Texture2D" uid="uid://dyv4t4vob75fb" path="res://assets/weapon guide book.png" id="2_yr0c0"]
+[ext_resource type="Texture2D" uid="uid://d0k0d0cief521" path="res://assets/page1.png" id="3_82j2r"]
+[ext_resource type="FontFile" uid="uid://bhmq07e75twkf" path="res://front/PixelGosub-ZaRz.ttf" id="4_82j2r"]
+[ext_resource type="Script" uid="uid://5h8j0ycrg15k" path="res://hint_button.gd" id="5_yr0c0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82j2r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yr0c0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lsi0u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dmrkg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6mbm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etmyf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2wgdf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_74ufk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v8pcg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kkahi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmrkg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lsi0u"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6mbm"]
+bg_color = Color(0.22382355, 0.22382358, 0.22382346, 0.56078434)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yr0c0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_riqys"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4xqn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kmx0o"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8r2x0"]
+bg_color = Color(0.28627452, 0.28627452, 0.28627452, 0.69803923)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oc6ig"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1eamk"]
+bg_color = Color(0.12941177, 0.12941177, 0.12941177, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4tkfv"]
+bg_color = Color(0.4599586, 0.45995867, 0.45995855, 0.61960787)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sn0t7"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="GuideBook" type="Control" unique_id=785024826 node_paths=PackedStringArray("cover_button", "page_view", "pages", "left_click_zone", "right_click_zone")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_kljp7")
+cover_button = NodePath("CoverButton")
+page_view = NodePath("PageView")
+pages = [NodePath("PageView/Page1"), NodePath("PageView/Page2"), NodePath("PageView/Page3")]
+left_click_zone = NodePath("PageView/LeftClickZone")
+right_click_zone = NodePath("PageView/RightClickZone")
+
+[node name="CoverButton" type="TextureButton" parent="." unique_id=1897563383]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 8.0
+offset_right = 413.0
+offset_bottom = 568.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_yr0c0")
+
+[node name="PageView" type="Control" parent="." unique_id=1133323527]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="PageView" unique_id=1324724378]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 390.0
+offset_bottom = 442.0
+texture = ExtResource("3_82j2r")
+
+[node name="LeftClickZone" type="Button" parent="PageView" unique_id=851545191]
+layout_mode = 0
+offset_right = 87.0
+offset_bottom = 601.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_82j2r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yr0c0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lsi0u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dmrkg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q6mbm")
+
+[node name="RightClickZone" type="Button" parent="PageView" unique_id=944792769]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 2.0
+offset_right = 445.0
+offset_bottom = 602.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_etmyf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2wgdf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_74ufk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v8pcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kkahi")
+
+[node name="Page1" type="Control" parent="PageView" unique_id=1654437399]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="PageView/Page1" unique_id=1872902269]
+layout_mode = 0
+offset_left = 37.0
+offset_top = -1.0
+offset_right = 365.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_font_sizes/font_size = 80
+text = "Preface"
+
+[node name="BodyLabel" type="Label" parent="PageView/Page1" unique_id=1979520354]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 136.0
+offset_right = 451.0
+offset_bottom = 443.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_font_sizes/font_size = 18
+text = "Hello young man 
+If you are reading this book 
+Wellcome to the world of creation.
+This book will help you 
+to understand your weapon
+Let's start journey,kid!"
+
+[node name="Page2" type="Control" parent="PageView" unique_id=1657906054]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="PageView/Page2" unique_id=798362761]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 460.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_font_sizes/font_size = 50
+text = "fire StarT"
+
+[node name="BodyLabel" type="Label" parent="PageView/Page2" unique_id=842623589]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 87.0
+offset_right = 372.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "   Hey there -Hmm let's me guess 
+a little bitconfused right now? 
+don't worry that not hard as it look 
+"
+
+[node name="CodeLabel" type="Label" parent="PageView/Page2" unique_id=2041261292]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 207.0
+offset_right = 321.0
+offset_bottom = 279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "import weapon_effect
+weapon_effect = \"fire\""
+
+[node name="first of all" type="Label" parent="PageView/Page2/CodeLabel" unique_id=1211125568]
+layout_mode = 0
+offset_left = -99.0
+offset_top = -37.0
+offset_right = 108.0
+offset_bottom = -14.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "first of all : try This!"
+
+[node name="PanelContainer" type="PanelContainer" parent="PageView/Page2/CodeLabel" unique_id=1213673618]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -10.0
+offset_top = -9.0
+offset_right = 7.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhunq")
+
+[node name="HintImport" type="Button" parent="PageView/Page2/CodeLabel" unique_id=1554622681]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 1.0
+offset_right = 58.0
+offset_bottom = 25.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dmrkg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsi0u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q6mbm")
+script = ExtResource("5_yr0c0")
+hint_text = "\"import\" means borrowing tools from elsewhere 
+ - like opening a tome for a recipe before you start forging."
+
+[node name="Fire" type="Button" parent="PageView/Page2" unique_id=726205158]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 239.0
+offset_right = 322.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yr0c0")
+script = ExtResource("5_yr0c0")
+hint_text = "\"fire\" it's the value stored inside the variable weapon_effect. 
+- Think of weapon_effect as a labeled box, and \"fire\" is what you just put inside it."
+
+[node name="after lerning fire" type="Label" parent="PageView/Page2" unique_id=774361558]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 285.0
+offset_right = 433.0
+offset_bottom = 357.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "it seem to be cool right but it just the 
+	appearance. if you want to set the true 
+fire you must have logic "
+
+[node name="Page3" type="Control" parent="PageView" unique_id=2016986108]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title II" type="Label" parent="PageView/Page3" unique_id=1684555074]
+layout_mode = 0
+offset_left = 13.0
+offset_top = -4.0
+offset_right = 145.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_font_sizes/font_size = 50
+text = "LOgic"
+
+[node name="Label" type="Label" parent="PageView/Page3/Title II" unique_id=1085276236]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 83.0
+offset_right = 427.0
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "I'll explain it simply: 
+\"if\" you want to make effect you have 
+to set the conditions first 
+The principle is that you need to 
+\"hit the enemy\" 
+\" to create a spark_effect \" 
+Try interpreting this from the text"
+
+[node name="hint" type="Label" parent="PageView/Page3/Title II/Label" unique_id=744420849]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 196.0
+offset_right = 325.0
+offset_bottom = 293.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "- sword.hit(enemy): 
+- enemy.burn_effect = True 
+- if"
+
+[node name="PanelContainer" type="PanelContainer" parent="PageView/Page3/Title II/Label/hint" unique_id=1171000674]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -4.0
+offset_right = 268.0
+offset_bottom = 81.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_riqys")
+
+[node name="HintIf" type="Button" parent="PageView/Page3/Title II/Label/hint" unique_id=1474471142]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 52.0
+offset_right = 39.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_styles/normal = SubResource("StyleBoxFlat_e4xqn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kmx0o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8r2x0")
+script = ExtResource("5_yr0c0")
+hint_text = "\"if\" - it only lets  run when this condition is true."
+
+[node name="HintTrue" type="Button" parent="PageView/Page3/Title II/Label/hint" unique_id=1341899086]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 28.0
+offset_right = 248.0
+offset_bottom = 48.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_oc6ig")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1eamk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4tkfv")
+script = ExtResource("5_yr0c0")
+hint_text = "\"True\" turns the state on. Its opposite, 
+\"False\", turns it off."
+
+[node name="Page4" type="Control" parent="PageView" unique_id=560158403]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BodyLabel" type="Label" parent="PageView/Page4" unique_id=1538218398]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 61.0
+offset_right = 483.0
+offset_bottom = 333.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "  But everything you've learned so far is 
+just the beginning. There are still many
+ things waiting for you to explore. 
+And this is the last thing I will help 
+you with: observe and find the answers 
+on your own.
+"
+
+[node name="Label" type="Label" parent="PageView/Page4" unique_id=512476467]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 1.0
+offset_right = 338.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+theme_override_font_sizes/font_size = 40
+text = "MAKE Your OWN"
+
+[node name="Label2" type="Label" parent="PageView/Page4" unique_id=1767799418]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 218.0
+offset_right = 290.0
+offset_bottom = 384.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "FIRE - BURN
+ICE - FREEZE
+LIGHTNING - SHOCK 
+VAMPIRE - LIFE STEAL
+GRAVITY - FORCE"
+
+[node name="PanelContainer" type="PanelContainer" parent="PageView/Page4/Label2" unique_id=676647540]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -5.0
+offset_right = 195.0
+offset_bottom = 131.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sn0t7")
+
+[node name="Label3" type="Label" parent="PageView/Page4" unique_id=2068367060]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 356.0
+offset_right = 581.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_82j2r")
+text = "It's a pity, but it was too short. 
+I hope we can meet again, kid."

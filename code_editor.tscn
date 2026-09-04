@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://bffxlvufvjsf3"]
+
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="1_uoi7k"]
+[ext_resource type="Script" uid="uid://b7nr4xi6y28bj" path="res://code_editor.gd" id="1_wbhed"]
+[ext_resource type="FontFile" uid="uid://87cnex0gdh3c" path="res://front/PressStart2P-vaV7.ttf" id="3_mjoov"]
+[ext_resource type="Texture2D" uid="uid://fhu3jopc2ebj" path="res://assets/henry buff [postit].png" id="3_wtavd"]
+[ext_resource type="PackedScene" uid="uid://dpcfwvmux3t4s" path="res://guide_book.tscn" id="6_y1hk0"]
+[ext_resource type="Texture2D" uid="uid://dhddy22i65q6g" path="res://assets/darp output2.png" id="7_y1hk0"]
+[ext_resource type="Texture2D" uid="uid://jfwxxb5xsa0e" path="res://assets/fire in darp4.png" id="8_j0vhn"]
+[ext_resource type="Texture2D" uid="uid://dov6pd2766nq2" path="res://assets/fire in darp5.png" id="9_pnm0f"]
+[ext_resource type="Texture2D" uid="uid://eu473meujxnp" path="res://assets/fire in darp1.png" id="10_we8ut"]
+[ext_resource type="Texture2D" uid="uid://trbeteqqsjab" path="res://assets/fire in darp2.png" id="11_gihk2"]
+[ext_resource type="Texture2D" uid="uid://bwlm54gl5f6y0" path="res://assets/fire in darp3.png" id="12_174xt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bhunq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_j0vhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pnm0f")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_we8ut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gihk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_174xt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j0vhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pnm0f")
+}],
+"loop": 0,
+"name": &"ignite",
+"speed": 10.0
+}]
+
+[node name="CodeEditor" type="CanvasLayer" unique_id=1149125310 node_paths=PackedStringArray("note_texture_rect", "guide_book", "sword_preview", "fire_overlay")]
+process_mode = 3
+script = ExtResource("1_wbhed")
+note_texture_rect = NodePath("NoteTextureRect")
+stat_ability_note = ExtResource("3_wtavd")
+guide_book = NodePath("GuideBook")
+sword_preview = NodePath("SwordPreview/SwordBase")
+fire_overlay = NodePath("SwordPreview/FireOverlay")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1680123273]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=501643349]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBar" type="Label" parent="." unique_id=281331614]
+offset_left = 58.0
+offset_top = 15.0
+offset_right = 378.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("1_uoi7k")
+theme_override_font_sizes/font_size = 50
+text = "EDIT UP TO YOU"
+
+[node name="CodeTextEdit" type="TextEdit" parent="." unique_id=1663330434]
+offset_left = 44.0
+offset_top = 66.0
+offset_right = 1888.0
+offset_bottom = 1058.0
+theme_override_fonts/font = ExtResource("3_mjoov")
+theme_override_font_sizes/font_size = 20
+
+[node name="BackButton" type="Button" parent="." unique_id=1898301608]
+offset_left = 1859.0
+offset_top = 5.0
+offset_right = 1915.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 30
+text = "X"
+
+[node name="CurrencyLabel" type="Label" parent="." unique_id=1960786806]
+offset_left = 1437.0
+offset_top = 78.0
+offset_right = 1856.0
+offset_bottom = 149.0
+theme_override_fonts/font = ExtResource("1_uoi7k")
+theme_override_font_sizes/font_size = 30
+
+[node name="OutputLabel" type="Label" parent="." unique_id=2043209649]
+offset_left = 80.0
+offset_top = 689.0
+offset_right = 1009.0
+offset_bottom = 997.0
+theme_override_fonts/font = ExtResource("1_uoi7k")
+theme_override_font_sizes/font_size = 30
+
+[node name="RunButton" type="Button" parent="." unique_id=2017689525]
+offset_left = 448.0
+offset_top = 9.0
+offset_right = 524.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("1_uoi7k")
+theme_override_font_sizes/font_size = 30
+text = "RUN"
+
+[node name="NoteTextureRect" type="TextureRect" parent="." unique_id=760924153]
+offset_left = 1405.0
+offset_top = 155.0
+offset_right = 1804.0
+offset_bottom = 677.0
+
+[node name="GuideBook" parent="." unique_id=785024826 instance=ExtResource("6_y1hk0")]
+offset_left = 1400.0
+offset_top = 138.0
+offset_right = 1440.0
+offset_bottom = 178.0
+
+[node name="SwordPreview" type="Control" parent="." unique_id=620967343]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1444.0
+offset_top = 126.0
+offset_right = 1444.0
+offset_bottom = 126.0
+
+[node name="SwordBase" type="TextureRect" parent="SwordPreview" unique_id=1669959977]
+layout_mode = 1
+offset_left = 41.0
+offset_top = 617.0
+offset_right = 305.0
+offset_bottom = 868.0
+texture = ExtResource("7_y1hk0")
+
+[node name="FireOverlay" type="AnimatedSprite2D" parent="SwordPreview" unique_id=1961812061]
+visible = false
+position = Vector2(184, 738)
+scale = Vector2(3.5281997, 2.5482595)
+sprite_frames = SubResource("SpriteFrames_bhunq")
+animation = &"idle"
+frame_progress = 0.25942925

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dp1i5a1oky2py"]
+
+[ext_resource type="PackedScene" uid="uid://dbwu655iucm2o" path="res://enemy.tscn" id="1_djcw0"]
+[ext_resource type="PackedScene" uid="uid://beh1x7rqg3glo" path="res://island_bounds.tscn" id="2_6v053"]
+[ext_resource type="PackedScene" uid="uid://dn5q34u8okp1a" path="res://player.tscn" id="3_xtltv"]
+[ext_resource type="PackedScene" uid="uid://dh20bi3u8rdxm" path="res://rocket.tscn" id="4_djcw0"]
+
+[node name="IslandTestArena" type="Node2D" unique_id=702011345]
+
+[node name="Enemy" parent="." unique_id=355083620 instance=ExtResource("1_djcw0")]
+
+[node name="IslandBounds" parent="." unique_id=1759235867 instance=ExtResource("2_6v053")]
+position = Vector2(-1003, -461)
+
+[node name="player" parent="." unique_id=662627393 instance=ExtResource("3_xtltv")]
+
+[node name="Rocket" parent="." unique_id=922398583 instance=ExtResource("4_djcw0")]

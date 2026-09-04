@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://b6hc4clrywit0"]
+
+[ext_resource type="Script" uid="uid://d1e144mejbs8q" path="res://slash_attack.gd" id="1_rkgvo"]
+[ext_resource type="Texture2D" uid="uid://qhsoigqw67pt" path="res://animation/slash !1.png" id="2_e0082"]
+[ext_resource type="Texture2D" uid="uid://b56grlw8e5kw" path="res://animation/slash !2.png" id="3_y76qb"]
+[ext_resource type="Texture2D" uid="uid://cbc4sthnk6q5v" path="res://animation/slash !3.png" id="4_t6t8s"]
+[ext_resource type="Texture2D" uid="uid://b2iixw76yt8js" path="res://animation/slash !4.png" id="5_vgj5m"]
+[ext_resource type="Texture2D" uid="uid://ljpqb3s2sfb7" path="res://animation/slash !5.png" id="6_h1f4g"]
+[ext_resource type="Texture2D" uid="uid://4cldvypfulmj" path="res://animation/slash !6.png" id="7_653qj"]
+[ext_resource type="Texture2D" uid="uid://dif0ejc42pa5g" path="res://animation/slash !7.png" id="8_8p80i"]
+[ext_resource type="Texture2D" uid="uid://coswtr4aem4i7" path="res://animation/slash !8.png" id="9_e0hjv"]
+[ext_resource type="AudioStream" uid="uid://d1qwl1gnrwxd5" path="res://sound/ฟัน1.wav" id="10_y76qb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_00vpi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e0082")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y76qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t6t8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vgj5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h1f4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_653qj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8p80i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e0hjv")
+}],
+"loop": 0,
+"name": &"slash",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(56, 88)
+
+[node name="SlashAttack" type="Area2D" unique_id=993723412]
+collision_mask = 4
+script = ExtResource("1_rkgvo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=738164923]
+position = Vector2(42, -6)
+scale = Vector2(1.7500001, 2.3984375)
+sprite_frames = SubResource("SpriteFrames_00vpi")
+animation = &"slash"
+frame = 7
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=477078957]
+position = Vector2(29, 6)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="SwingSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=812802151]
+stream = ExtResource("10_y76qb")

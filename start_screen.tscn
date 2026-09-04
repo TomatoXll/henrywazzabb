@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://bsmj6jvej77pv"]
+
+[ext_resource type="Texture2D" uid="uid://ct2mppdji77mk" path="res://assets/Henry switch.png" id="1_afy8x"]
+[ext_resource type="Script" uid="uid://1jglfcl6l1ds" path="res://start_screen.gd" id="1_cdgt5"]
+[ext_resource type="Script" uid="uid://c6q5rnj0c2ak1" path="res://console.gd" id="2_cdgt5"]
+[ext_resource type="Texture2D" uid="uid://d0t0cexn4ir4a" path="res://assets/talub game gta[new game].png" id="2_k1na2"]
+[ext_resource type="Script" uid="uid://bh3ppvydwcrhl" path="res://draggable_cartridge.gd" id="2_vdywr"]
+[ext_resource type="Texture2D" uid="uid://qpldbp662uwu" path="res://assets/talub gamecontra [load game].png" id="3_vdywr"]
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="7_l67vj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6f8o3"]
+size = Vector2(184.80804, 30.769234)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(176.29944, 144.06387)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_riqys"]
+size = Vector2(422.9967, 339.8999)
+
+[node name="StartScreen" type="Node2D" unique_id=59320944]
+script = ExtResource("1_cdgt5")
+
+[node name="Console" type="Sprite2D" parent="." unique_id=971697681]
+position = Vector2(979, 375)
+scale = Vector2(1.9966667, 2.08)
+texture = ExtResource("1_afy8x")
+script = ExtResource("2_cdgt5")
+
+[node name="Slot" type="Area2D" parent="Console" unique_id=70291263]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Console/Slot" unique_id=1891433263]
+position = Vector2(6.7612915, -28.365387)
+scale = Vector2(0.99999964, 1)
+shape = SubResource("RectangleShape2D_6f8o3")
+
+[node name="InsertPosition" type="Marker2D" parent="Console/Slot" unique_id=180939872]
+
+[node name="CartridgeNewGame" type="Area2D" parent="." unique_id=735011043]
+script = ExtResource("2_vdywr")
+console_path = NodePath("../Console")
+
+[node name="Sprite2D i" type="Sprite2D" parent="CartridgeNewGame" unique_id=607652454]
+position = Vector2(364, 787.00006)
+rotation = 0.2443461
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("2_k1na2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CartridgeNewGame" unique_id=956223653]
+position = Vector2(374.5475, 784.0777)
+rotation = 0.24434611
+scale = Vector2(2.4, 2.4)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="CartridgeLoadGame" type="Area2D" parent="." unique_id=1678995773]
+script = ExtResource("2_vdywr")
+cartridge_type = "load_game"
+console_path = NodePath("../Console")
+
+[node name="Sprite2D" type="Sprite2D" parent="CartridgeLoadGame" unique_id=194201797]
+position = Vector2(1555, 711)
+rotation = -0.43633232
+scale = Vector2(2.4000003, 2.3569446)
+texture = ExtResource("3_vdywr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CartridgeLoadGame" unique_id=896527564]
+position = Vector2(1561.5065, 701.6439)
+rotation = -0.43633235
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_riqys")
+
+[node name="StartPrompt" type="Label" parent="." unique_id=717926813]
+offset_left = 936.0
+offset_top = 771.0
+offset_right = 976.0
+offset_bottom = 822.0
+theme_override_fonts/font = ExtResource("7_l67vj")
+theme_override_font_sizes/font_size = 50
+
+[node name="HoldProgress" type="Label" parent="." unique_id=1249590148]
+offset_left = 937.0
+offset_top = 772.0
+offset_right = 977.0
+offset_bottom = 823.0
+theme_override_fonts/font = ExtResource("7_l67vj")
+theme_override_font_sizes/font_size = 50
+
+[node name="LeaveButton" type="Button" parent="." unique_id=1457521372]
+offset_left = 867.0
+offset_top = 924.0
+offset_right = 1070.0
+offset_bottom = 1017.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 50
+text = "LEAVE"

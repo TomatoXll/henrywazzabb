@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://do01vyw2qkrkv"]
+
+[ext_resource type="Script" uid="uid://bd57dl5jnfyom" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dn5q34u8okp1a" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dbwu655iucm2o" path="res://enemy.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://c4lwsttca154c" path="res://wave_manager.gd" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dh20bi3u8rdxm" path="res://rocket.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://beh1x7rqg3glo" path="res://island_bounds.tscn" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://csoox7cp10ype" path="res://assets/GROUND.png" id="7_5vw27"]
+
+[node name="main" type="Node2D" unique_id=753203354]
+position = Vector2(634, 320)
+script = ExtResource("1_h2yge")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=115179185]
+offset_left = -1036.0
+offset_top = -831.0
+offset_right = 1220.0
+offset_bottom = 812.0
+texture = ExtResource("7_5vw27")
+
+[node name="Enemy" parent="." unique_id=355083620 instance=ExtResource("2_0xm2m")]
+position = Vector2(-256, -30)
+max_health = 20
+
+[node name="WaveManager" type="Node2D" parent="." unique_id=1307834200]
+script = ExtResource("4_1bvp3")
+enemy_scene = ExtResource("2_0xm2m")
+
+[node name="Rocket" parent="." unique_id=922398583 instance=ExtResource("5_lquwl")]
+
+[node name="IslandBounds" parent="." unique_id=1759235867 instance=ExtResource("6_272bh")]
+position = Vector2(-942, -549)
+
+[node name="player" parent="." unique_id=662627393 instance=ExtResource("1_ig7tw")]

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://da357q7vwpc2x"]
+
+[ext_resource type="Script" uid="uid://cxfanutq15suh" path="res://folder_select_screen.gd" id="1_cn4av"]
+[ext_resource type="Texture2D" uid="uid://fj35v214t6ns" path="res://assets/folder select mafuk true.png" id="2_cn4av"]
+[ext_resource type="Texture2D" uid="uid://2lsv8es8kjl8" path="res://assets/darp button [folder]1.png" id="3_8hwl0"]
+[ext_resource type="Texture2D" uid="uid://qn0v2u3xg6ba" path="res://assets/darp button hover.png" id="4_7oiwi"]
+[ext_resource type="Texture2D" uid="uid://duyrcuqu4savp" path="res://assets/henry button [folder] notfake1.png" id="5_q1oet"]
+[ext_resource type="Texture2D" uid="uid://bmlees346a0bo" path="res://assets/henry button [folder]hover.png" id="6_1h8vy"]
+
+[node name="FolderSelectScreen" type="CanvasLayer" unique_id=1984314592]
+process_mode = 3
+script = ExtResource("1_cn4av")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=730836352]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_cn4av")
+
+[node name="DarpFolderButton" type="TextureButton" parent="." unique_id=874104878]
+offset_left = 223.0
+offset_top = 254.0
+offset_right = 1359.0
+offset_bottom = 294.0
+texture_normal = ExtResource("3_8hwl0")
+texture_pressed = ExtResource("4_7oiwi")
+texture_hover = ExtResource("4_7oiwi")
+
+[node name="HenryFolderButton" type="TextureButton" parent="." unique_id=1336666096]
+offset_left = 224.0
+offset_top = 216.0
+offset_right = 1511.0
+offset_bottom = 256.0
+texture_normal = ExtResource("5_q1oet")
+texture_pressed = ExtResource("6_1h8vy")
+texture_hover = ExtResource("6_1h8vy")
+
+[node name="BackButton" type="Button" parent="." unique_id=633188499]
+offset_left = 1873.0
+offset_top = 3.0
+offset_right = 1914.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 20
+text = "X"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1975571530]
+offset_left = 543.0
+offset_top = 175.0
+offset_right = 990.0
+offset_bottom = 292.0
+color = Color(0.09923177, 0.09923177, 0.09923177, 1)

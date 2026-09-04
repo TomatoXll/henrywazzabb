@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cics0gel242h"]
+
+[ext_resource type="Script" uid="uid://nx63o5d1xafb" path="res://pixel_editor.gd" id="1_bm1kb"]
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="2_brr6b"]
+
+[node name="PixelEditor" type="CanvasLayer" unique_id=1395300371]
+process_mode = 3
+script = ExtResource("1_bm1kb")
+
+[node name="dum" type="ColorRect" parent="." unique_id=89503328]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.096204735, 0.09620475, 0.096204735, 1)
+
+[node name="kaw" type="ColorRect" parent="." unique_id=566726230]
+offset_left = 67.0
+offset_top = 140.0
+offset_right = 420.0
+offset_bottom = 624.0
+
+[node name="InfoLabel" type="Label" parent="." unique_id=1901172526]
+offset_left = 38.0
+offset_top = 43.0
+offset_right = 570.0
+offset_bottom = 94.0
+theme_override_fonts/font = ExtResource("2_brr6b")
+theme_override_font_sizes/font_size = 50
+text = "DRAW WHAT YOU WANT !!!"
+
+[node name="ReferenceLayer" type="TextureRect" parent="." unique_id=1373811909]
+modulate = Color(1, 1, 1, 0.8392157)
+offset_left = 40.0
+offset_top = 84.0
+offset_right = 400.0
+offset_bottom = 564.0
+
+[node name="DrawLayer" type="TextureRect" parent="." unique_id=2113556650]
+offset_left = 40.0
+offset_top = 84.0
+offset_right = 400.0
+offset_bottom = 564.0
+
+[node name="PrevFrameButton" type="Button" parent="." unique_id=996211234]
+offset_left = 130.0
+offset_top = 633.0
+offset_right = 181.0
+offset_bottom = 710.0
+theme_override_font_sizes/font_size = 50
+text = "◀"
+
+[node name="NextFrameButton" type="Button" parent="." unique_id=1331070617]
+offset_left = 266.0
+offset_top = 633.0
+offset_right = 317.0
+offset_bottom = 710.0
+theme_override_font_sizes/font_size = 50
+text = "▶"
+
+[node name="ColorPicker" type="ColorPickerButton" parent="." unique_id=1645234322]
+custom_minimum_size = Vector2(60, 40)
+offset_left = 468.0
+offset_top = 153.0
+offset_right = 669.0
+offset_bottom = 291.0
+theme_override_font_sizes/font_size = 50
+
+[node name="EraserButton" type="Button" parent="." unique_id=1337096317]
+offset_left = 490.0
+offset_top = 321.0
+offset_right = 651.0
+offset_bottom = 398.0
+theme_override_font_sizes/font_size = 50
+text = "Eraser"
+
+[node name="SaveButton" type="Button" parent="." unique_id=362502381]
+offset_left = 160.0
+offset_top = 870.0
+offset_right = 288.0
+offset_bottom = 947.0
+theme_override_font_sizes/font_size = 50
+text = "SAVE"
+
+[node name="BackButton" type="Button" parent="." unique_id=1341831045]
+offset_left = 1801.0
+offset_top = 965.0
+offset_right = 1887.0
+offset_bottom = 1015.0
+theme_override_font_sizes/font_size = 30
+text = "BACK"
+
+[node name="ResetButton" type="Button" parent="." unique_id=899091351]
+offset_left = 138.0
+offset_top = 773.0
+offset_right = 319.0
+offset_bottom = 850.0
+theme_override_font_sizes/font_size = 50
+text = "default"

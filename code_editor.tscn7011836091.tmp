@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bffxlvufvjsf3"]
+
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="1_uoi7k"]
+[ext_resource type="Script" uid="uid://b7nr4xi6y28bj" path="res://code_editor.gd" id="1_wbhed"]
+
+[node name="CodeEditor" type="CanvasLayer" unique_id=1149125310]
+process_mode = 3
+script = ExtResource("1_wbhed")
+
+[node name="Panel" type="Panel" parent="." unique_id=501643349]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBar" type="Label" parent="." unique_id=281331614]
+offset_left = 58.0
+offset_top = 15.0
+offset_right = 378.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("1_uoi7k")
+theme_override_font_sizes/font_size = 50
+text = "EDIT UP TO YOU"
+
+[node name="CodeTextEdit" type="TextEdit" parent="." unique_id=1663330434]
+offset_left = 44.0
+offset_top = 66.0
+offset_right = 1888.0
+offset_bottom = 1058.0
+theme_override_fonts/font = ExtResource("1_uoi7k")
+theme_override_font_sizes/font_size = 30
+
+[node name="BackButton" type="Button" parent="." unique_id=1898301608]
+offset_left = 1859.0
+offset_top = 5.0
+offset_right = 1915.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 30
+text = "X"
+
+[node name="CurrencyLabel" type="Label" parent="." unique_id=1960786806]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="OutputLabel" type="Label" parent="." unique_id=2043209649]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RunButton" type="Button" parent="." unique_id=2017689525]
+offset_right = 8.0
+offset_bottom = 8.0

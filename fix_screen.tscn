@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://cdqcicn043q6"]
+
+[ext_resource type="Script" uid="uid://cgc0bhgtj551v" path="res://fix_screen.gd" id="1_c6d84"]
+[ext_resource type="FontFile" uid="uid://87cnex0gdh3c" path="res://front/PressStart2P-vaV7.ttf" id="2_b5cih"]
+[ext_resource type="FontFile" uid="uid://cjq1d2tki37ns" path="res://front/PixelMillennium-1oBZ.ttf" id="2_lw1nc"]
+[ext_resource type="Texture2D" uid="uid://duy0ot4tmt14c" path="res://assets/in case 'error' [postit].png" id="4_xeavt"]
+
+[node name="fix_screen" type="CanvasLayer" unique_id=1205720608 node_paths=PackedStringArray("code_text_edit", "compile_button", "back_button", "output_label", "title_label")]
+process_mode = 3
+script = ExtResource("1_c6d84")
+code_text_edit = NodePath("fix code")
+compile_button = NodePath("run")
+back_button = NodePath("back")
+output_label = NodePath("out put")
+title_label = NodePath("title")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=431253227]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -31.0
+offset_right = -4.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13755062, 0.13755065, 0.13755062, 1)
+
+[node name="fix code" type="TextEdit" parent="." unique_id=855315328]
+offset_left = 76.0
+offset_top = 211.0
+offset_right = 1433.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource("2_b5cih")
+
+[node name="run" type="Button" parent="." unique_id=1071186708]
+offset_left = 951.0
+offset_top = 83.0
+offset_right = 1040.0
+offset_bottom = 142.0
+theme_override_fonts/font = ExtResource("2_lw1nc")
+theme_override_font_sizes/font_size = 50
+text = "RUN"
+
+[node name="back" type="Button" parent="." unique_id=1003091223]
+offset_left = 1767.0
+offset_top = 962.0
+offset_right = 1875.0
+offset_bottom = 1021.0
+theme_override_fonts/font = ExtResource("2_lw1nc")
+theme_override_font_sizes/font_size = 50
+text = "BACK"
+
+[node name="out put" type="Label" parent="." unique_id=1558025994]
+offset_left = 37.0
+offset_top = 738.0
+offset_right = 1640.0
+offset_bottom = 1033.0
+theme_override_fonts/font = ExtResource("2_lw1nc")
+theme_override_font_sizes/font_size = 30
+
+[node name="title" type="Label" parent="." unique_id=710082745]
+offset_left = 80.0
+offset_top = 55.0
+offset_right = 911.0
+offset_bottom = 179.0
+theme_override_fonts/font = ExtResource("2_lw1nc")
+theme_override_font_sizes/font_size = 50
+
+[node name="postit" type="TextureRect" parent="." unique_id=1717558130]
+offset_left = 1475.0
+offset_top = 75.0
+offset_right = 1875.0
+offset_bottom = 575.0
+texture = ExtResource("4_xeavt")
